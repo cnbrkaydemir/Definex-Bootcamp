@@ -53,10 +53,10 @@ public class Building implements Serializable {
 
     @Override
     public String toString() {
-        return  this.getClass().getName()+
+        return  this.getClass().getSimpleName()+
                 " with price= " + price +
-                ", area= " + area +
-                ", numberOfRooms= " + numberOfRooms +
-                ", numberOfSalons= " + numberOfSalons ;
+                ", area in m^2= " + area +
+                ", number of rooms= " + numberOfRooms +
+                ", number of salons= " + numberOfSalons ;
     }
 }
