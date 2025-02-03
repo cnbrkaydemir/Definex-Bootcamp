@@ -1,3 +1,5 @@
+//Implementation of Housing Service
+
 package com.cnbrkaydemir.service.impl;
 
 import com.cnbrkaydemir.model.Building;
@@ -96,11 +98,11 @@ public class HousingServiceImpl implements HousingService {
 
     @Override
     public void filterBuildings(HousingAgency housingAgency, int numberOfRooms, int numberOfSalons) {
-        filterSingleBuildingType(housingAgency.getHouses(), numberOfRooms, numberOfSalons);
+        filterSingleBuildingType(housingAgency.getHouses(), numberOfRooms, numberOfSalons); // Filter Houses
 
-        filterSingleBuildingType(housingAgency.getVillas(), numberOfRooms, numberOfSalons);
+        filterSingleBuildingType(housingAgency.getVillas(), numberOfRooms, numberOfSalons); // Filter Villas
 
-        filterSingleBuildingType(housingAgency.getSummerHouses(), numberOfRooms, numberOfSalons);
+        filterSingleBuildingType(housingAgency.getSummerHouses(), numberOfRooms, numberOfSalons); // Filter SH.
     }
 
     @Override

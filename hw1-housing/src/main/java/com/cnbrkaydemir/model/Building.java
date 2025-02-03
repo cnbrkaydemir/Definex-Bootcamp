@@ -1,3 +1,5 @@
+// Super class of house,villa and Summer house.
+
 package com.cnbrkaydemir.model;
 
 import java.io.Serializable;

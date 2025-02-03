@@ -1,3 +1,5 @@
+// The class that stores lists of houses, villas and summer houses.
+
 package com.cnbrkaydemir.model;
 
 import java.util.ArrayList;
