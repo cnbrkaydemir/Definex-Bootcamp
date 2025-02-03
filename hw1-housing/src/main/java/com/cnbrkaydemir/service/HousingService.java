@@ -25,17 +25,19 @@ public interface HousingService {
 
     double calculateSummerHouseAreas(HousingAgency housingAgency);
 
+    double calculateCumulativeArea(HousingAgency housingAgency);
+
     double calculateAverageHouseArea(HousingAgency housingAgency);
 
     double calculateAverageVillaArea(HousingAgency housingAgency);
 
     double calculateAverageSummerHouseArea(HousingAgency housingAgency);
 
-    double calculateAverageTotalPrice(HousingAgency housingAgency);
+    double calculateAverageArea(HousingAgency housingAgency);
 
     void filterBuildings(HousingAgency housingAgency, int numberOfRooms, int numberOfSalons);
 
-    void filterSingleBuildingType(List<? extends Building> buildings, HousingAgency housingAgency);
+    void filterSingleBuildingType(List<? extends Building> buildings, int numberOfRooms, int numberOfSalons);
 
 
 }
